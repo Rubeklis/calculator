@@ -21,13 +21,19 @@ input.money {
 
 #izdevumi {
 	border: 2px solid white;
+	padding: 15px 0 15px 0;
 	height: 160px;
 	width: 400px;
-	padding: 15px 0 15px 0;
 }
 
 .list {
 	margin: 10px;
+}
+
+.is-input-checked {
+	margin-left: 10px;
+	text-align: right;
+	color: lightgrey;
 }
 
 #pogas {
@@ -52,3 +58,4 @@ input.money {
 	color: lightgrey;
 	padding: 5px;
 }
+
