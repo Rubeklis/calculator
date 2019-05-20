@@ -1,10 +1,13 @@
 body {
 	background-color: pink;
 	font-family: 'Roboto', sans-serif;
+	margin: auto;
+	width: 500px;
 }
 
 #input-block {
 	border: 2px solid white;
+	margin-top: 50px;
 	padding: 25px;
 	height: 55px;
 	width: 350px;
@@ -16,7 +19,7 @@ body {
 	margin-left: 113px;
 }
 
-.input.submit {
+.submit {
 	border-radius: 8%;
 	margin-right: 3px;
 	float: right;
