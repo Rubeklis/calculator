@@ -1,0 +1,34 @@
+body {
+	background-color: pink;
+	font-family: 'Roboto', sans-serif;
+}
+
+#input-block {
+	border: 2px solid white;
+	padding: 25px;
+	height: 55px;
+	width: 350px;
+}
+
+.input.money {
+	text-align: right;
+	color: lightgrey;
+	margin-left: 113px;
+}
+
+.input.submit {
+	border-radius: 8%;
+	margin-right: 3px;
+	float: right;
+}
+
+#result {
+	border: 2px solid white;
+	height: 160px;
+	width: 400px;
+	padding: 15px 0 15px 0;
+}
+
+.list {
+	margin: 10px;
+}
