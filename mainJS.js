@@ -26,3 +26,8 @@ console.log(expense);
 //3
 const budget = document.getElementById('budget__value');
 console.log(budget);
+
+//4
+function budzetaFunkcija() {
+	document.getElementById('budget__value').innerHTML = 200;
+}
