@@ -22,3 +22,7 @@ console.log(income);
 //2
 const expense = document.getElementById('all_expenses').getElementsByClassName('list_item');
 console.log(expense);
+
+//3
+const budget = document.getElementById('budget__value');
+console.log(budget);
