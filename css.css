@@ -1,61 +1,66 @@
-body {
-	background-color: pink;
-	font-family: 'Roboto', sans-serif;
-	margin: auto;
-	width: 500px;
+/* Nodefinē kontenera maksimālo platumu un ar margin: auto nocentre */
+.container {
+  max-width: 1000px;
+  margin: auto;
 }
 
-#input-block {
-	border: 2px solid white;
-	margin-top: 50px;
-	padding: 25px;
-	height: 55px;
-	width: 350px;
+/* Pieškir izkārtojumu ar css grid, priekš desktop*/
+@media only screen and (min-width: 700px) {
+  .grid_layout {
+    display: grid;
+    grid-template-areas: 'top top' 'left right';
+    grid-gap: 10px;
+    padding: 15px;
+    grid-template-rows: 150px;
+    grid-auto-rows: 600px;
+  }
 }
 
-input.money {
-	text-align: right;
-	color: lightgrey;
-	margin-left: 114px;
+.top {
+  grid-area: top;
+  text-align: center;
 }
 
-#izdevumi {
-	border: 2px solid white;
-	padding: 15px 0 15px 0;
-	height: 160px;
-	width: 400px;
+.left {
+  grid-area: left;
 }
 
+.right {
+  grid-area: right;
+}
+
+.container > div {
+  padding: 30px;
+  border: 1px blueviolet solid;
+}
+
+.container > div h1 {
+  margin-top: 0;
+}
+
+.budget__value {
+  padding-bottom: 30px;
+}
+
+.budget__total {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+/* styling for income and expeses list */
 .list {
-	margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.is-input-checked {
-	margin-left: 10px;
-	text-align: right;
-	color: lightgrey;
+.list_item {
+  display: flex;
+  justify-content: space-between;
+}
+.list__inner {
+  flex-grow: 1;
 }
 
-#pogas {
-	border: 2px solid white;
-	height: 100px;
-	width: 400px;
+.list__total {
+  align-self: flex-end;
 }
-
-.submit {
-	border-radius: 5px;
-	margin-right: 10px;
-	margin-top: 35px;
-	padding: 5px;
-	float: right;
-}
-
-.summa {
-	border-radius: 5px;
-	margin-left: 10px;
-	text-align: right;
-	margin-top: 35px;
-	color: lightgrey;
-	padding: 5px;
-}
-
