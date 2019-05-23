@@ -18,3 +18,7 @@
 //1
 const income = document.getElementById('all_income').getElementsByClassName('list_item');
 console.log(income);
+
+//2
+const expense = document.getElementById('all_expenses').getElementsByClassName('list_item');
+console.log(expense);
