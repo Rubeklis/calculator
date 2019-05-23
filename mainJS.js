@@ -31,3 +31,9 @@ console.log(budget);
 function budzetaFunkcija() {
 	document.getElementById('budget__value').innerHTML = 200;
 }
+
+//5
+function addListItem() {
+	income.insertAdjacentHTML('beforeend', "<div class="list_description">Azartspeles</div><div class="list_value">+500€</div>")
+}
+addListItem();
