@@ -14,3 +14,7 @@
 //10.Izsaukt funkciju_2, kas pievieno ienākumu sarakstam vertības
 //11.Izsaukt funkciju_2, kas pievieno izdevumu sarakstam vertības
 //12.Izsaukt funkciju_1, kas izmaina pieejamā budžeta vertību
+
+//1
+const income = document.getElementById('all_income').getElementsByClassName('list_item');
+console.log(income);
