@@ -33,4 +33,14 @@ function budzetaFunkcija() {
 }
 
 //5
-income.insertAdjacentHTML('beforeend', '<div class="list_item"><div class="list_description">Azartspeles</div><div class="list_value">+500€</div></div>');
+function addListItem() {
+	const apraksts = document.getElementById('add_description').value;
+	const summa = document.getElementById('add_value').value;
+	income.insertAdjacentHTML('beforeend', apraksts  + summa + '<br>');
+}
+
+//6
+function addPoga() {
+	const poga = document.getElementById('poga')
+	poga.addEventListener('click', addListItem())
+}
