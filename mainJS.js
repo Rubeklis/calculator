@@ -16,11 +16,11 @@
 //12.Izsaukt funkciju_1, kas izmaina pieejamā budžeta vertību
 
 //1
-const income = document.getElementById('all_income').getElementsByClassName('list_item');
-console.log(income);
+const income = document.getElementById('all_income');
+console.log(income, 'au');
 
 //2
-const expense = document.getElementById('all_expenses').getElementsByClassName('list_item');
+const expense = document.getElementById('all_expenses');
 console.log(expense);
 
 //3
@@ -33,7 +33,4 @@ function budzetaFunkcija() {
 }
 
 //5
-function addListItem() {
-	income.insertAdjacentHTML('beforeend', "<div class="list_description">Azartspeles</div><div class="list_value">+500€</div>")
-}
-addListItem();
+income.insertAdjacentHTML('beforeend', '<div class="list_item"><div class="list_description">Azartspeles</div><div class="list_value">+500€</div></div>');
